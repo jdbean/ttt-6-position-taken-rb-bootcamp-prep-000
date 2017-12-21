@@ -1,11 +1,9 @@
 # code your #position_taken? method here!
 
 def position_taken?(board, index)
-  if board[index] == " " #return false if index is empty
+  if board[index] == " " || board[index] == nil) || (board[index] == "" #return false if index is empty or equivalent
     return false
-  elseif (board[index] == nil) || (board[index] == "") #return false if index is empty (edge case)
-    return false
-  elseif board[index] == "X" || board[index] == "O" #return true if index contains player "mark"
+  elseif #return true of not empty
     return true
   end
 end
